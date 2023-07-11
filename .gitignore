@@ -1,0 +1,4 @@
+.vscode/
+.history/
+main_env/
+__pycache__/
