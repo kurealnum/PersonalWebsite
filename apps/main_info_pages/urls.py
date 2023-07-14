@@ -2,5 +2,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('aboutme/', views.aboutme, name='main_info_pages')
+    #base template 
+    path('', views.layout, name='layout'),
+
+    path('home/', views.home, name="home"),
+    path('aboutme/', views.aboutme, name='aboutme'),
 ]

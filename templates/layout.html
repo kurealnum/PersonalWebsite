@@ -14,8 +14,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{% static 'main_styles.css' %}">
     </head>
+    <nav>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'aboutme' %}">About Me</a></li>
+    </nav>
     <body>
-        <p>AOIHAHOI</p>
         {% block body %}{% endblock %}
     </body>
 </html>
