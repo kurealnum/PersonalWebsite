@@ -13,6 +13,16 @@ def home(request):
     return HttpResponse(template.render())
 
 
+def resume(request):
+    template = loader.get_template('resume.html')
+    return HttpResponse(template.render())
+
+
+def portfolio(request):
+    template = loader.get_template('portfolio.html')
+    return HttpResponse(template.render())
+
+
 def layout(request):
     template = loader.get_template('layout.html')
     return HttpResponse(template.render())
