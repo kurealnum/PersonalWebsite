@@ -18,7 +18,7 @@ def layout(request):
     template = loader.get_template('layout.html')
     referer_url = request.META.get('HTTP_REFERER')
 
-    #if we're coming from "/", just
+    #if we're coming from "/", just redirect to our index page
     if not referer_url:
         return redirect("index")
 
