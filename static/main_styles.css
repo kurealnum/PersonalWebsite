@@ -45,11 +45,10 @@ ul {
     color: white;
     font-size: 13px;
     font-weight: 400;
-    word-wrap: break-word;
+    word-wrap: normal;
 }
 
 .name{
-    width: 117px;
     position: absolute;
     text-align: center;
     color: white;
