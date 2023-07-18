@@ -1,24 +1,35 @@
 {% load static %}
-
+div
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% block title %}{% endblock %} </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'main_styles.css' %}">
-    </head>
-    <nav>
-        <ul>
-            <li><a href="{% url 'index' %}">Home</a></li>
-            <li><a href="{% url 'aboutme' %}">About Me</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="">Portfolio</a></li>
-        </ul>
-    </nav>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% block title %}{% endblock %} </title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'main_styles.css' %}">
+</head>
+<nav>
+    <ul>
+        <div class="navbar-text">
+            <li class="navbar-item">about me</li>
+            <li class="navbar-item">contact me</li>
+            <li class="navbar-item">top projects</li>
+        </div>
+        <l class="name">&lt;Oscar/></li></a>
+
+        <div class="nav-gradient"></div>
+    </ul>
+</nav>
+
+<body>
+    {% block body %}{% endblock %}
+</body>
+
 </html>

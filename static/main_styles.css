@@ -1,12 +1,64 @@
-nav {
-    display: flex;
-    justify-content: center;
+/* 
+2 color paletes to work from:
+https://mycolor.space/?hex=%239FC164&sub=1
+https://mycolor.space/?hex=%23894478&sub=1
+*/
+
+/* phone sizes */
+@media only screen and (max-width: 475px){
+}
+
+/* tablet sizes */
+@media only screen and (min-width: 475px) {
+}
+
+
+/* computer/desktop/etc sizes */
+@media only screen and (min-width: 1000px) {
+}
+
+/* global CSS stuff */
+:root {
+    font-family: 'Outfit';
+    background-color: black;
+}
+
+nav { 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
 }
 
 ul {
-    list-style-type: none;
+    position: relative;
 }
 
-li {
-    display: inline;
+.navbar-text {
+    position: absolute;
 }
+
+.navbar-item { 
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.name{
+    width: 117px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.nav-gradient {
+    align-self: stretch;
+    flex: 1 1 0;
+    background: linear-gradient(180deg, rgba(98, 65, 107, 0.71) 0%, rgba(108, 131, 149, 0.71) 100%)
+}
+
