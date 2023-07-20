@@ -9,24 +9,6 @@ https://mycolor.space/?hex=%23894478&sub=1
   font-family: 'Outfit';
 }
 
-/* turning the gradients on when I'm done with the website */
-
-.top-gradient {
-  background: linear-gradient(180deg, #474747 0%, #3D3D3D 100%);
-}
-
-.middle-gradient {
-  background: linear-gradient(180deg, #3D3D3D 0%, #1F1F1F 13%, #202024 87%, #282741 100%, rgba(20, 20, 20, 0) 100%)
-}
-
-.bottom-gradient {
-  background: linear-gradient(180deg, #272640 0%, rgba(21, 16, 107, 0.90) 100%)
-}
-
-body {
-  margin: 0;
-}
-
 nav {
   display: block;
   background: linear-gradient(180deg, rgba(98, 65, 107, 0.71) 0%, rgba(108, 131, 149, 0.71) 100%);
@@ -53,4 +35,26 @@ nav a li {
 
 #nav-name {
   font-size: 24px;
+}
+
+/* turning the gradients on when I'm done with the website */
+
+.top-gradient {
+  background: linear-gradient(180deg, #474747 0%, #3D3D3D 100%);
+}
+
+.middle-gradient {
+  background: linear-gradient(180deg, #3D3D3D 0%, #1F1F1F 13%, #202024 87%, #282741 100%, rgba(20, 20, 20, 0) 100%)
+}
+
+.bottom-gradient {
+  background: linear-gradient(180deg, #272640 0%, rgba(21, 16, 107, 0.90) 100%)
+}
+
+body {
+  margin: 0;
+}
+
+#moon {
+  margin: 0 auto;
 }
