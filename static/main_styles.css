@@ -5,13 +5,13 @@ https://mycolor.space/?hex=%23894478&sub=1
 */
 
 :root {
-  background: black;
   font-family: 'Outfit';
+  font-weight: 300;
 }
 
 nav {
   display: block;
-  background: linear-gradient(180deg, rgba(98, 65, 107, 0.71) 0%, rgba(108, 131, 149, 0.71) 100%);
+  background: linear-gradient(180deg, #62416bb5, #6c8395b5);
 }
 
 ul {
@@ -37,18 +37,17 @@ nav a li {
   font-size: 24px;
 }
 
-/* turning the gradients on when I'm done with the website */
-
-.top-gradient {
+#top-gradient {
   background: linear-gradient(180deg, #474747 0%, #3D3D3D 100%);
 }
 
-.middle-gradient {
-  background: linear-gradient(180deg, #3D3D3D 0%, #1F1F1F 13%, #202024 87%, #282741 100%, rgba(20, 20, 20, 0) 100%)
+#middle-gradient {
+  background: linear-gradient(180deg, #3D3D3D 0%, #1F1F1F 13%, #202024 87%, #282741 100%, #14141400 100%);
+  position: absolute;
 }
 
-.bottom-gradient {
-  background: linear-gradient(180deg, #272640 0%, rgba(21, 16, 107, 0.90) 100%)
+#bottom-gradient {
+  background: linear-gradient(180deg, #272640 0%, #15106be6 100%);
 }
 
 body {
@@ -61,19 +60,45 @@ body {
   margin: 0 auto;
 }
 
-#pfp {
-  display: block;
-  margin: auto;
-  width: 50vw;
-  height: 50vw;
+.pfp-container {
+  border-radius: 50vw;
+  margin: 75px auto;
+  width: 56vw;
+  height: 56vw;
+  background: linear-gradient(180deg, #894478 0%, #65909a 100%);
 }
 
-.pfp-container {
-  margin: 75px auto;
-  background: white;
-  border-radius: 50%;
+#pfp {
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
   width: 50vw;
   height: 50vw;
-  box-shadow: 0px 1.9467142820358276px 1.9467142820358276px rgba(0, 0, 0, 0.25);
-  border: 2.5vw #894478 solid;
+  border-radius: 50vw;
+  object-fit: cover;
+  position: relative;
+}
+
+.contact-me-cont {
+  margin: 0 auto;
+  list-style: none;
+  max-width: 60vw;
+  background: linear-gradient(180deg, #894478 0%, #65909a 100%);
+  border-radius: 10vw;
+}
+
+.contact-me {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 0px 6px;
+}
+
+h1 {
+  font-size: 54px;
+  background: linear-gradient(180deg, #226271 55%, #63AD73 100%);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
 }
