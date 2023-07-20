@@ -62,19 +62,18 @@ body {
 }
 
 #pfp {
-  padding: 75px 0px;
   display: block;
-  margin: 0 auto;
-  box-shadow: 0px 1.9467142820358276px 1.9467142820358276px rgba(0, 0, 0, 0.25);
-  border: 2.43px #894478 solid;
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
 }
 
 .pfp-container {
+  margin: 75px auto;
   background: white;
-  margin: 0 auto;
-  width: 45%;
-  height: 45%;
   border-radius: 50%;
-  border:double 10px transparent;
-  padding: 10px;
+  width: 50vw;
+  height: 50vw;
+  box-shadow: 0px 1.9467142820358276px 1.9467142820358276px rgba(0, 0, 0, 0.25);
+  border: 2.5vw #894478 solid;
 }
