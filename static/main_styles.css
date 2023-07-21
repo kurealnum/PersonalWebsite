@@ -146,5 +146,6 @@ nav a li {
   margin: 0 auto;
   background: #226271; 
   width: 85%;
+  border-radius: 5px;
   height: 0.5em;
 }
