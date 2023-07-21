@@ -7,6 +7,14 @@ https://mycolor.space/?hex=%23894478&sub=1
 :root {
   font-family: 'Outfit';
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -42,8 +50,9 @@ nav a li {
 }
 
 #middle-gradient {
-  background: linear-gradient(180deg, #3D3D3D 0%, #1F1F1F 13%, #202024 87%, #282741 100%, #14141400 100%);
+  background: black;
   position: absolute;
+  width: 100%;
 }
 
 #bottom-gradient {
