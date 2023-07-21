@@ -6,17 +6,16 @@ https://mycolor.space/?hex=%23894478&sub=1
 gradients are to be decided!
 */
 
+body, :root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 :root {
   font-family: 'Outfit';
   font-weight: 300;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
 }
 
 nav {
@@ -103,4 +102,10 @@ h1 {
   background-clip: text;
   color: transparent;
   text-align: center;
+}
+
+#canvas {
+  position: fixed;
+  z-index: -1;
+  min-height: 100%; 
 }
