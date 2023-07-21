@@ -133,10 +133,10 @@ nav a li {
 }
 
 .my-tech-header {
-  margin: 20vh 0 2vh 0;
+  margin: 10vh 0 2vh 0;
   padding: 60px 0 0 0;
   font-size: 48px;
-  background: linear-gradient(180deg, #6e5ca3 30%, #be5678 70%);
+  background: linear-gradient(180deg, #6e5ca3 10%, #be5678 40%);
   background-clip: text;
   color: transparent;
   text-align: center;
@@ -148,4 +148,16 @@ nav a li {
   width: 85%;
   border-radius: 5px;
   height: 0.5em;
+  margin-bottom: 2vh;
+}
+
+.tech-svg-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tech-svg {
+  width: 26%;
+  padding: 10px 0 10px 0;
 }
