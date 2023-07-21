@@ -12,7 +12,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'main_styles.css' %}">
 </head>
 
@@ -23,7 +25,7 @@
         <a href="">
             <li id="nav-name">&ltOscar/></li>
         </a>
-        <a href="">
+        <a href="#about-me">
             <li>about me</li>
         </a><a href="">
             <li>contact me</li>
@@ -39,13 +41,34 @@
         <div class="pfp-container">
             <img id="pfp" src="{% static 'pfp.jpg' %}" alt="Profile picture">
         </div>
-        <div class="contact-me-cont">
-            <a class="contact-me" href="">
+        <div class="button-cont">
+            <a class="button" href="">
                 <li>Contact me</li>
             </a>
         </div>
     </div>
-    <h1>about me</h1>
+    <h1 id="about-me">about me</h1>
+    <p class="about-me-text">
+        Hello there! I’m Oscar, but you might know me online as kureal (or kurealnum)!
+        I’m very interested in Django, SQL, and anything python related. Whilst I would like to pursue
+        a career as a full stack developer, I would much prefer to start in back-end and work my way up.</p>
+
+    <p class="about-me-text">
+        I do love Django, but I’m always open to learning new and different technologies. For example, I’ve
+        been learning Java just for the fun of it! However, it has been very beneficial towards my skills
+        in object oriented programming.
+    </p>
+    <div class="flex-cont">
+        <div class="button-cont">
+            <a href="https://docs.google.com/document/d/104CdIhV0xpPLE5--gmSbonsOXHvxtyxsc5pmr79R42k/edit?usp=sharing" class="button">
+                <li>My Resume</li>
+            </a>
+        </div>
+    </div>
+    
+    <h1 class="my-tech-header">my stack</h1>
+    <div class="header-line"></div>
+
     <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
     <script>
         const canvas = document.getElementById('canvas');
