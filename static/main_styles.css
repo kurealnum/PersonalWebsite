@@ -45,8 +45,11 @@ nav a li {
   font-size: 24px;
 }
 
-body {
-  margin: 0;
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-between;
 }
 
 #moon {
@@ -56,6 +59,8 @@ body {
 }
 
 .pfp-container {
+  display: flex;
+  justify-content: center;
   border-radius: 50vw;
   margin: 75px auto;
   width: 56vw;
@@ -64,34 +69,30 @@ body {
 }
 
 #pfp {
-  margin: 75px auto;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
   width: 50vw;
   height: 50vw;
   border-radius: 50vw;
   object-fit: cover;
-  position: relative;
+  align-self: center;
 }
 
 .contact-me-cont {
-  margin: 0 auto;
   list-style: none;
   max-width: 60vw;
   background: linear-gradient(180deg, #894478 0%, #65909a 100%);
   border-radius: 10vw;
+  align-self: center;
+  width: 100%;
 }
 
 .contact-me {
   text-align: center;
   color: white;
   font-size: 20px;
-  padding: 0px 6px;
+  margin: 30px;
 }
 
 h1 {
-  
   font-size: 54px;
   background: linear-gradient(180deg, #226271 55%, #63AD73 100%);
   background-clip: text;
