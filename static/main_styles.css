@@ -9,12 +9,12 @@ https://mycolor.space/?hex=%23894478&sub=1
   font-weight: 300;
   margin: 0;
   padding: 0;
-  background-color: black;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 nav {
@@ -45,20 +45,6 @@ nav a li {
   font-size: 24px;
 }
 
-#top-gradient {
-  background: linear-gradient(180deg, #474747 0%, #3D3D3D 100%);
-}
-
-#middle-gradient {
-  background: black;
-  position: absolute;
-  width: 100%;
-}
-
-#bottom-gradient {
-  background: linear-gradient(180deg, #272640 0%, #15106be6 100%);
-}
-
 body {
   margin: 0;
 }
@@ -78,7 +64,7 @@ body {
 }
 
 #pfp {
-  margin: 0 auto;
+  margin: 75px auto;
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -105,6 +91,7 @@ body {
 }
 
 h1 {
+  
   font-size: 54px;
   background: linear-gradient(180deg, #226271 55%, #63AD73 100%);
   background-clip: text;
