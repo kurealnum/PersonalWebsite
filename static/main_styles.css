@@ -140,6 +140,7 @@ nav a li {
   background-clip: text;
   color: transparent;
   text-align: center;
+  font-weight: 300;
 }
 
 .header-line {
