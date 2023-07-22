@@ -1,3 +1,6 @@
+import requests
+from collections import defaultdict
+
 from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import HttpResponse
@@ -5,12 +8,24 @@ from django.http import HttpResponse
 
 def index(request):
     template = loader.get_template('index.html')
+
+    github_repos = defaultdict(list)
+
+    #init repos here. names need to be exactly as they are on github
+    repo_list = ["Data-Structures-and-Algorithms"]
+
+    for repo in repo_list:
+        repo_data = requests.get(f"https://api.github.com/repos/kurealnum/{repo}").json()
+        name = repo_data["full_name"]
+        desc = repo_data["description"]
+        lang = repo_data["language"]
+        star_count = repo_data["stargazers_count"]
+        fork_count = repo_data["forks_count"]
+
+        github_repos[name] = [name, desc, lang, star_count, fork_count]
+
     return HttpResponse(template.render())
 
-
-def aboutme(request):
-    template = loader.get_template('aboutme.html')
-    return HttpResponse(template.render())
 
 
 def layout(request):
