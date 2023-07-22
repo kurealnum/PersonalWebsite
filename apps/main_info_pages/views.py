@@ -1,5 +1,4 @@
 import requests
-from collections import defaultdict
 
 from django.shortcuts import render, redirect
 from django.template import loader
@@ -9,7 +8,7 @@ from django.http import HttpResponse
 def index(request):
     template = loader.get_template('index.html')
 
-    github_repos = defaultdict(list)
+    github_repos = {}
 
     #init repos here. names need to be exactly as they are on github
     repo_list = ["Data-Structures-and-Algorithms"]
@@ -24,8 +23,7 @@ def index(request):
 
         github_repos[name] = [name, desc, lang, star_count, fork_count]
 
-    return HttpResponse(template.render())
-
+    return HttpResponse(template.render(), repo_info=github_repos)
 
 
 def layout(request):
