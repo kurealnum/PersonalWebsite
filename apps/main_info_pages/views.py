@@ -11,7 +11,7 @@ def index(request):
     github_repos = {}
 
     #init repos here. names need to be exactly as they are on github
-    repo_list = ["Data-Structures-and-Algorithms"]
+    repo_list = ["Non-Profit-Link", "Data-Structures-and-Algorithms", "Personal-Workflows"]
 
     for repo in repo_list:
         #get all the data
