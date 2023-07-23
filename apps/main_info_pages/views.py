@@ -14,6 +14,7 @@ def index(request):
     repo_list = ["Data-Structures-and-Algorithms"]
 
     for repo in repo_list:
+        #get all the data
         repo_data = requests.get(f"https://api.github.com/repos/kurealnum/{repo}").json()
         name = repo_data["full_name"]
         desc = repo_data["description"]
@@ -21,7 +22,8 @@ def index(request):
         star_count = repo_data["stargazers_count"]
         fork_count = repo_data["forks_count"]
 
-        github_repos[name] = [name, desc, lang, star_count, fork_count]
+        github_repos[name] = [desc, lang, star_count, fork_count]
+        # (index) 0 is description, 1 is the language, 2 is the star count, and 3 is the fork count
 
     return HttpResponse(template.render(), repo_info=github_repos)
 
