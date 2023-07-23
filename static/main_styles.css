@@ -108,7 +108,7 @@ nav a li {
   font-size: 28px;
 }
 
-#about-me {
+.main-header {
   margin: 20vh 0 5vh 0;
   padding: 60px 0 0 0;
   font-size: 64px;
@@ -167,7 +167,7 @@ nav a li {
 
 /* github repo cards */
 
-#top-projects {
+#top-projects-section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -206,4 +206,16 @@ nav a li {
 
 .github-repo-title, .github-repo-desc, .github-repo-info {
   padding: 0 10px;
+}
+
+#contact-me-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#earth {
+  display: flex;
+  padding-top: 45vh;
+  width: 100%;
 }

@@ -27,9 +27,9 @@
         </a>
         <a href="#about-me">
             <li>about me</li>
-        </a><a href="">
+        </a><a href="#contact-me">
             <li>contact me</li>
-        </a><a href="">
+        </a><a href="#top-projects">
             <li>top projects</li>
         </a>
     </ul>
@@ -48,7 +48,8 @@
         </div>
     </div>
 
-    <h1 id="about-me">about me</h1>
+    <h1 class="main-header" id="about-me">about me</h1>
+
     <p class="about-me-text">
         Hello there! I’m Oscar, but you might know me online as kureal (or kurealnum)!
         I’m very interested in Django, SQL, and anything python related. Whilst I would like to pursue
@@ -96,9 +97,9 @@
         <img src="{% static 'images/tech_icons/VSCode-Dark.svg' %}" alt="" class="tech-svg">
     </section>
 
-    <h1 id="about-me">top projects</h1>
+    <h1 class="main-header" id="top-projects">top projects</h1>
 
-    <section id="top-projects">
+    <section id="top-projects-section">
         {% for key, value in github_repos.items %}
             <div class="github-repo-cont">
                 <header class="github-repo-title">
@@ -139,8 +140,9 @@
         {% endfor %}
     </section>
 
-    <section id="contact-me">
-        <h1 id="about-me">contact me</h1>
+    <h1 class="main-header" id="contact-me">contact me</h1>
+
+    <section>
         <p class="about-me-text">Feel free to contact me for any reason whatsoever!</p>
         <div id="contact-me-icons">
             <a href=""><img src="{% static 'images/contact_me_icons/link.svg' %}" alt="Link SVG icon"></a>
@@ -148,6 +150,9 @@
             <a href=""><img src="{% static 'images/contact_me_icons/github.svg' %}" alt="Github SVG icon"></a>
         </div>
     </section>
+
+    <!-- earth -->
+    <img src="{% static 'images/earth.svg' %}" alt="SVG of Earth" id="earth">
 
     <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
     <script>
