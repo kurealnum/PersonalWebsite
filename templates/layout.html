@@ -47,6 +47,7 @@
             </a>
         </div>
     </div>
+    
     <h1 id="about-me">about me</h1>
     <p class="about-me-text">
         Hello there! I’m Oscar, but you might know me online as kureal (or kurealnum)!
@@ -70,7 +71,7 @@
     <h1 class="my-tech-header">my stack</h1>
     <div class="header-line"></div>
 
-    <div class="tech-svg-cont">
+    <section class="tech-svg-cont">
         <img src="{% static 'images/tech_icons/Django.svg' %}" alt="Django icon" class="tech-svg">
         <img src="{% static 'images/tech_icons/Flask-Dark.svg' %}" alt="Flask icon" class="tech-svg">
         <img src="{% static 'images/tech_icons/Python-Dark.svg' %}" alt="Python/Py icon" class="tech-svg">
@@ -80,12 +81,12 @@
         <img src="{% static 'images/tech_icons/JavaScript.svg' %}" alt="JavaScript/JS icon" class="tech-svg">
         <img src="{% static 'images/tech_icons/HTML.svg' %}" alt="HTML icon" class="tech-svg">
         <img src="{% static 'images/tech_icons/CSS.svg' %}" alt="CSS icon" class="tech-svg">
-    </div>
+    </section>
 
     <h1 class="my-tech-header">familiar technologies</h1>
     <div class="header-line"></div>
 
-    <div class="tech-svg-cont">
+    <section class="tech-svg-cont">
         <img src="{% static 'images/tech_icons/C.svg' %}" alt="C icon" class="tech-svg">
         <img src="{% static 'images/tech_icons/Java-Dark.svg' %}" alt="Java icon" class="tech-svg">
         <img src="{% static 'images/tech_icons/LaTeX-Dark.svg' %}" alt="" class="tech-svg">
@@ -93,43 +94,44 @@
         <img src="{% static 'images/tech_icons/Unity-Dark.svg' %}" alt="" class="tech-svg">
         <img src="{% static 'images/tech_icons/Blender-Dark.svg' %}" alt="" class="tech-svg">
         <img src="{% static 'images/tech_icons/VSCode-Dark.svg' %}" alt="" class="tech-svg">
-    </div>
+    </section>
 
-    <h1 id="top-projects">
+    <h1>
         <a href="https://github.com/kurealnum/Personal-Workflows"><img src="https://gh-card.dev/repos/kurealnum/Personal-Workflows.svg?fullname=" alt="Personal-Workflows Github" class="project-pic"></a>
         <a href="https://github.com/kurealnum/Data-Structures-and-Algorithms"><img src="https://gh-card.dev/repos/kurealnum/Data-Structures-and-Algorithms.svg?fullname=" alt="Data-Structures-and-Algorithms Github" class="project-pic"></a>
         <a href="https://github.com/kurealnum/Non-Profit-Link"><img src="https://gh-card.dev/repos/kurealnum/Non-Profit-Link.svg?fullname=" alt="Non-Profit-Link Github" class="project-pic"></a>
     </h1>
 
-    {% for key, value in github_repos.items %}
-        <div class="github-repo-cont">
-            <img src="" alt="" class="github-repo-symbol">
-            <a href="" class="github-link">
-                <h1 class="github-repo-title">
-                    {{ key }}
+    <section id="top-projects">
+        {% for key, value in github_repos.items %}
+            <div class="github-repo-cont">
+                <img src="" alt="" class="github-repo-symbol">
+                <a href="" class="github-link">
+                    <h1 class="github-repo-title">
+                        {{ key }}
+                    </h1>
+                </a>
                 </h1>
-            </a>
-
-            </h1>
-            <p class="github-repo-desc">
-                {{ value.0 }}
-            </p>
-            <div class="github-repo-info">
-                <div class="color"></div>
-                <p class="language">
-                    {{ value.1}}
+                <p class="github-repo-desc">
+                    {{ value.0 }}
                 </p>
-                <img src="" alt="Github star icon" class="star">
-                <p class="star-count">
-                    {{ value.2 }}
-                </p>
-                <img src="" alt="Github fork icon" class="fork">
-                <p class="fork-count">
-                    {{ value.3 }}
-                </p>
+                <div class="github-repo-info">
+                    <div class="color"></div>
+                    <p class="language">
+                        {{ value.1}}
+                    </p>
+                    <img src="" alt="Github star icon" class="star">
+                    <p class="star-count">
+                        {{ value.2 }}
+                    </p>
+                    <img src="" alt="Github fork icon" class="fork">
+                    <p class="fork-count">
+                        {{ value.3 }}
+                    </p>
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </section>
 
     <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
     <script>
