@@ -176,14 +176,14 @@ nav a li {
 
 .github-repo-cont {
   background: white;
-  border-radius: 30px;
+  border-radius: 12px;
   width: 350px;
 }
 
 .github-repo-title, .github-repo-info {
   display: inline-flex;
   flex-wrap: nowrap;
-  align-items: baseline;
+  align-items: center;
   font-size: 14px;
 }
 
@@ -201,5 +201,9 @@ nav a li {
 
 .octicon-repo {
   width: 20px;
-  padding: 0 6px;
+  padding: 0 4px;
+}
+
+.github-repo-title, .github-repo-desc, .github-repo-info {
+  padding: 0 10px;
 }

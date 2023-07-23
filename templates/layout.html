@@ -96,6 +96,8 @@
         <img src="{% static 'images/tech_icons/VSCode-Dark.svg' %}" alt="" class="tech-svg">
     </section>
 
+    <h1 id="about-me">top projects</h1>
+
     <section id="top-projects">
         {% for key, value in github_repos.items %}
             <div class="github-repo-cont">
@@ -135,6 +137,16 @@
                 </div>
             </div>
         {% endfor %}
+    </section>
+
+    <section id="contact-me">
+        <h1 id="about-me">contact me</h1>
+        <p class="about-me-text">Feel free to contact me for any reason whatsoever!</p>
+        <div id="contact-me-icons">
+            <a href=""><img src="{% static 'images/contact_me_icons/link.svg' %}" alt="Link SVG icon"></a>
+            <a href=""><img src="{% static 'images/contact_me_icons/email.svg' %}" alt="Email SVG icon"></a>
+            <a href=""><img src="{% static 'images/contact_me_icons/github.svg' %}" alt="Github SVG icon"></a>
+        </div>
     </section>
 
     <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
