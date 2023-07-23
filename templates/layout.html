@@ -101,31 +101,35 @@
         <a href="https://github.com/kurealnum/Non-Profit-Link"><img src="https://gh-card.dev/repos/kurealnum/Non-Profit-Link.svg?fullname=" alt="Non-Profit-Link Github" class="project-pic"></a>
     </h1>
 
-    <div class="github-repo-cont">
-        <img src="" alt="" class="github-repo-symbol">
-        <a href="" class="github-link">
-            <h1 class="github-repo-title">
-        </a>
+    {% for key, value in github_repos.items %}
+        <div class="github-repo-cont">
+            <img src="" alt="" class="github-repo-symbol">
+            <a href="" class="github-link">
+                <h1 class="github-repo-title">
+                    {{ key }}
+                </h1>
+            </a>
 
-        </h1>
-        <p class="github-repo-desc">
-
-        </p>
-        <div class="github-repo-info">
-            <div class="color"></div>
-            <p class="language">
-
+            </h1>
+            <p class="github-repo-desc">
+                {{ value.0 }}
             </p>
-            <img src="" alt="Github star icon" class="star">
-            <p class="star-count">
-
-            </p>
-            <img src="" alt="Github fork icon" class="fork">
-            <p class="fork-count">
-                
-            </p>
+            <div class="github-repo-info">
+                <div class="color"></div>
+                <p class="language">
+                    {{ value.1}}
+                </p>
+                <img src="" alt="Github star icon" class="star">
+                <p class="star-count">
+                    {{ value.2 }}
+                </p>
+                <img src="" alt="Github fork icon" class="fork">
+                <p class="fork-count">
+                    {{ value.3 }}
+                </p>
+            </div>
         </div>
-    </div>
+    {% endfor %}
 
     <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
     <script>

@@ -25,7 +25,11 @@ def index(request):
         github_repos[name] = [desc, lang, star_count, fork_count]
         # (index) 0 is description, 1 is the language, 2 is the star count, and 3 is the fork count
 
-    return HttpResponse(template.render(), repo_info=github_repos)
+    context = {
+        "github_repos": github_repos,
+    }
+
+    return HttpResponse(template.render(context, request))
 
 
 def layout(request):
