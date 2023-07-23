@@ -8,6 +8,11 @@ https://mycolor.space/?hex=%23894478&sub=1
 gradients are to be decided!
 */
 
+:root {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200;
+}
+
 body, :root {
   height: 100%;
   margin: 0;
@@ -16,12 +21,7 @@ body, :root {
   scroll-behavior: smooth;
 }
 
-:root {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 200;
-}
-
-#canvas {
+canvas {
   position: fixed;
   z-index: -1;
   min-height: 100%; 
@@ -57,21 +57,14 @@ nav a li {
   font-size: 24px;
 }
 
-.intro-wrapper {
+body .intro-wrapper {
   display: flex;
   flex-direction: column;
   height: 95vh;
   justify-content: space-between;
 }
 
-#top {
-  display: block;
-  width: 80%;
-  height: 24%;
-  margin: 0 auto;
-}
-
-.pfp-container {
+body .intro-wrapper .pfp-container {
   display: flex;
   justify-content: center;
   border-radius: 50vw;
@@ -81,7 +74,7 @@ nav a li {
   background: linear-gradient(180deg, #894478 0%, #65909a 100%);
 }
 
-#pfp {
+div #pfp {
   width: 59vw;
   height: 59vw;
   border-radius: 50vw;
@@ -108,7 +101,7 @@ nav a li {
   font-size: 28px;
 }
 
-.main-header {
+h1 {
   margin: 20vh 0 5vh 0;
   padding: 60px 0 0 0;
   font-size: 64px;
@@ -118,7 +111,7 @@ nav a li {
   text-align: center;
 }
 
-.about-me-text {
+.general-text {
   line-height: 1.6;
   padding:0.5vh 0 3vh 0;
   text-align: center;
@@ -145,7 +138,7 @@ nav a li {
   font-weight: 300;
 }
 
-.header-line {
+figure {
   margin: 0 auto;
   background: #226271; 
   width: 85%;
@@ -160,7 +153,7 @@ nav a li {
   flex-wrap: wrap;
 }
 
-.tech-svg {
+.tech-svg-cont img {
   width: 26%;
   padding: 10px 0 10px 0;
 }
@@ -174,10 +167,8 @@ nav a li {
   gap: 3vh;
 }
 
-.github-repo-cont {
-  background: white;
-  border-radius: 12px;
-  width: 350px;
+.github-repo-title, .github-repo-desc, .github-repo-info {
+  padding: 0 10px;
 }
 
 .github-repo-title, .github-repo-info {
@@ -185,6 +176,12 @@ nav a li {
   flex-wrap: nowrap;
   align-items: center;
   font-size: 14px;
+}
+
+.github-repo-cont {
+  background: white;
+  border-radius: 12px;
+  width: 350px;
 }
 
 .github-repo-desc {
@@ -204,10 +201,6 @@ nav a li {
   padding: 0 4px;
 }
 
-.github-repo-title, .github-repo-desc, .github-repo-info {
-  padding: 0 10px;
-}
-
 #contact-me-icons {
   display: flex;
   justify-content: center;
@@ -217,6 +210,8 @@ nav a li {
 footer {
   display: flex;
   flex-direction: column;
+  height: 78vh;
+  justify-content: space-between;
 }
 
 #earth {
