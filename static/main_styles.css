@@ -1,4 +1,6 @@
 /* 
+CSS not updating? Press Ctrl + Shift + R
+
 2 color paletes to work from:
 https://mycolor.space/?hex=%239FC164&sub=1
 https://mycolor.space/?hex=%23894478&sub=1
@@ -161,4 +163,43 @@ nav a li {
 .tech-svg {
   width: 26%;
   padding: 10px 0 10px 0;
+}
+
+/* github repo cards */
+
+#top-projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3vh;
+}
+
+.github-repo-cont {
+  background: white;
+  border-radius: 30px;
+  width: 350px;
+}
+
+.github-repo-title, .github-repo-info {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  font-size: 14px;
+}
+
+.github-repo-desc {
+  margin: 0;
+}
+
+.github-repo-info {
+  gap: 6px;
+}
+
+.github-repo-title-text {
+  margin: 6px;
+}
+
+.octicon-repo {
+  width: 20px;
+  padding: 0 6px;
 }
