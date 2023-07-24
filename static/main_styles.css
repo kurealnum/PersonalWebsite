@@ -9,10 +9,11 @@ gradients are to be decided!
 */
 
 :root {
-  --background-color: #02000D;
+  --top-background-color: #02000D;
+  --bottom-background-color: #252e40;
   --primary: #226271;
-  --secondary: #63AD73;
-  --accent: #63AD73;
+  --secondary: #7168A6;
+  --accent: #7168A6;
   --secondary-accent: #00ACDCaf;
 
   font-family: 'Outfit', sans-serif;

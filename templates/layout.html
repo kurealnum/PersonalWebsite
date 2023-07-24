@@ -167,8 +167,8 @@
     <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
     <script>
         const styles = getComputedStyle(document.documentElement);
-        const bgColor = styles.getPropertyValue('--background-color');
-        const primaryColor = styles.getPropertyValue('--primary');
+        const bgColor = styles.getPropertyValue('--top-background-color');
+        const primaryColor = styles.getPropertyValue('--bottom-background-color');
 
         const canvas = document.getElementById('canvas');
         const starback = new Starback(canvas, {
