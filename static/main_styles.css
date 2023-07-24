@@ -14,9 +14,9 @@ gradients are to be decided!
   --secondary: #443C68;
   --accent: #cf71ff;
 
-  /* keep in mind this site is built mobile first */
+  /* settings for background.js */
   --star-count: 250;
-  --speed: 0.7;
+  --speed: 0.3;
 
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
@@ -82,7 +82,7 @@ body .intro-wrapper .pfp-container {
   margin: auto;
   width: 65vw;
   height: 65vw;
-  background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
+  background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
 }
 
 div #pfp {

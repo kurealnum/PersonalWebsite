@@ -5,12 +5,12 @@ const styles = getComputedStyle(document.documentElement);
 const backgroundColor = styles.getPropertyValue('--background-color')
 
 var starCount = styles.getPropertyValue('--star-count');
-var speed = styles.getPropertyValue('--speed');
+var starSpeed = styles.getPropertyValue('--speed');
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-let screen, stars, params = {speed: speed, number: starCount, extinction: 4};
+let screen, stars, params = {speed: starSpeed, number: starCount, extinction: 4};
 
 setupStars();
 updateStars();
