@@ -9,6 +9,12 @@ gradients are to be decided!
 */
 
 :root {
+  --background-color: #02000D;
+  --text-color: #D8D9D0;
+  --primary: #4C428C;
+  --secondary: #392140;
+  --accent: #2E038C;
+
   font-family: 'Outfit', sans-serif;
   font-weight: 200;
 }
