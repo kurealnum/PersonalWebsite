@@ -10,11 +10,10 @@ gradients are to be decided!
 
 :root {
   --background-color: #02000D;
-  --text-color: #D8D9D0;
   --primary: #226271;
   --secondary: #63AD73;
-  --accent: #be5678;
-  --secondary-accent: #226271;
+  --accent: #63AD73;
+  --secondary-accent: #00ACDCaf;
 
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
