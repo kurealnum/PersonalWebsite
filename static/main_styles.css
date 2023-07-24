@@ -9,12 +9,10 @@ gradients are to be decided!
 */
 
 :root {
-  --top-background-color: #02000D;
-  --bottom-background-color: #252e40;
-  --primary: #226271;
-  --secondary: #7168A6;
-  --accent: #7168A6cf;
-  --secondary-accent: #00ACDCaf;
+  --background-color: #02000D;
+  --primary: #2e0983;
+  --secondary: #443C68;
+  --accent: #cf71ff;
 
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
@@ -80,7 +78,7 @@ body .intro-wrapper .pfp-container {
   margin: 75px auto;
   width: 65vw;
   height: 65vw;
-  background: linear-gradient(180deg, #226271 55%, #63AD73 100%);
+  background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
 }
 
 div #pfp {
@@ -94,7 +92,7 @@ div #pfp {
 .button-cont {
   display: flex;
   list-style: none;
-  background: linear-gradient(180deg, var(--accent) 0%, var(--secondary-accent) 100%);
+  background: var(--primary);
   border-radius: 10vw;
   align-self: center;
   justify-content: center;

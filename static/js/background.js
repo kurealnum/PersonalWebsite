@@ -1,5 +1,8 @@
 // credit -> https://codepen.io/ksenia-k/pen/gOPboQg
 
+const styles = getComputedStyle(document.documentElement);
+const backgroundColor = styles.getPropertyValue('--background-color')
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -59,7 +62,7 @@ function setupStars() {
 }
 
 function updateStars() {
-    ctx.fillStyle = "black";
+    ctx.fillStyle = backgroundColor;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     stars.forEach(function (s) {
         s.show();
