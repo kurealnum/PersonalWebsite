@@ -13,7 +13,7 @@ gradients are to be decided!
   --bottom-background-color: #252e40;
   --primary: #226271;
   --secondary: #7168A6;
-  --accent: #7168A6;
+  --accent: #7168A6cf;
   --secondary-accent: #00ACDCaf;
 
   font-family: 'Outfit', sans-serif;
@@ -25,6 +25,7 @@ body, :root {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overscroll-behavior: none;
   scroll-behavior: smooth;
 }
 
@@ -39,7 +40,7 @@ nav {
   position: fixed;
   width: 100%;
   /* background colors with opacity lowered */
-  background: #232b3ebf
+  background: #232b3ecf;
 }
 
 ul {
@@ -79,7 +80,7 @@ body .intro-wrapper .pfp-container {
   margin: 75px auto;
   width: 65vw;
   height: 65vw;
-  background: linear-gradient(180deg, var(--primary) 15%, var(--secondary) 100%);
+  background: linear-gradient(180deg, #226271 55%, #63AD73 100%);
 }
 
 div #pfp {

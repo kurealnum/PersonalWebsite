@@ -164,22 +164,7 @@
         <img src="{% static 'images/earth.svg' %}" alt="SVG of Earth" id="earth">
     </footer>
 
-    <script src="https://unpkg.com/starback@2.1.1/dist/starback.global.js"></script>
-    <script>
-        const styles = getComputedStyle(document.documentElement);
-        const bgColor = styles.getPropertyValue('--top-background-color');
-        const primaryColor = styles.getPropertyValue('--bottom-background-color');
-
-        const canvas = document.getElementById('canvas');
-        const starback = new Starback(canvas, {
-            type: 'dot',
-            quantity: 100,
-            direction: 225,
-            //old colors '#0e1118', '#232b3e'
-            backgroundColor: [bgColor, primaryColor],
-            randomOpacity: true,
-        });
-    </script>
+    <script src="{% static 'js/background.js' %}"></script>
 </body>
 
 </html>
