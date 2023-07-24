@@ -22,7 +22,7 @@
 
 <nav>
     <ul>
-        <a href="#moon">
+        <a onclick="scrollToTop()" id="topButton">
             <li id="nav-name">&ltOscar/></li>
         </a>
         <a href="#about-me">
@@ -37,7 +37,6 @@
 
 <body>
     <div class="intro-wrapper">
-        <img id="moon" src="{% static 'images/moon.svg' %}" alt="Drawn moon picture">
         <div class="pfp-container">
             <img id="pfp" src="{% static 'images/pfp.jpg' %}" alt="Profile picture">
         </div>
@@ -165,6 +164,7 @@
     </footer>
 
     <script src="{% static 'js/background.js' %}"></script>
+    <script src="{% static 'js/functionality.js' %}"></script>
 </body>
 
 </html>

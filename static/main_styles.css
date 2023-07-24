@@ -38,7 +38,7 @@ nav {
   position: fixed;
   width: 100%;
   /* background colors with opacity lowered */
-  background: #232b3ecf;
+  background: #02000D8f;
 }
 
 ul {
@@ -75,7 +75,7 @@ body .intro-wrapper .pfp-container {
   display: flex;
   justify-content: center;
   border-radius: 50vw;
-  margin: 75px auto;
+  margin: auto;
   width: 65vw;
   height: 65vw;
   background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
@@ -112,7 +112,7 @@ h1 {
   margin: 20vh 0 5vh 0;
   padding: 60px 0 0 0;
   font-size: 64px;
-  background: linear-gradient(180deg, #226271 55%, #63AD73 100%);
+  background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
   background-clip: text;
   color: transparent;
   text-align: center;
@@ -147,7 +147,7 @@ h1 {
 
 figure {
   margin: 0 auto;
-  background: var(--secondary-accent); 
+  background: var(--primary); 
   width: 85%;
   border-radius: 5px;
   height: 0.5em;
