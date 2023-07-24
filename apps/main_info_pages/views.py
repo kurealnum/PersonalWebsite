@@ -1,8 +1,14 @@
-import requests
+import requests, environ
 
 from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import HttpResponse
+
+
+# getting env stuff
+env = environ.Env()
+environ.Env.read_env()
+github_token = env('GITHUB_TOKEN')
 
 
 def index(request):
@@ -11,11 +17,12 @@ def index(request):
     github_repos = {}
 
     #init repos here. names need to be exactly as they are on github
+    headers = {'Authorization': 'token ' + github_token}
     repo_list = ["Non-Profit-Link", "Data-Structures-and-Algorithms", "Personal-Workflows"]
 
     for repo in repo_list:
         #get all the data
-        repo_data = requests.get(f"https://api.github.com/repos/kurealnum/{repo}").json()
+        repo_data = requests.get(f"https://api.github.com/repos/kurealnum/{repo}", headers=headers).json()
         repo_link = repo_data["html_url"]
         name = repo_data["full_name"]
         desc = repo_data["description"]
