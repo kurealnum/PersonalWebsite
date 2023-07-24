@@ -14,6 +14,10 @@ gradients are to be decided!
   --secondary: #443C68;
   --accent: #cf71ff;
 
+  /* keep in mind this site is built mobile first */
+  --star-count: 250;
+  --speed: 0.7;
+
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
 }

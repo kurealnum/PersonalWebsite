@@ -1,12 +1,16 @@
 // credit -> https://codepen.io/ksenia-k/pen/gOPboQg
 
+//getting colors
 const styles = getComputedStyle(document.documentElement);
 const backgroundColor = styles.getPropertyValue('--background-color')
+
+var starCount = styles.getPropertyValue('--star-count');
+var speed = styles.getPropertyValue('--speed');
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-let screen, stars, params = {speed: 0.75, number: 300, extinction: 4};
+let screen, stars, params = {speed: speed, number: starCount, extinction: 4};
 
 setupStars();
 updateStars();
