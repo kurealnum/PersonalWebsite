@@ -11,12 +11,13 @@ gradients are to be decided!
 :root {
   --background-color: #02000D;
   --text-color: #D8D9D0;
-  --primary: #4C428C;
-  --secondary: #392140;
-  --accent: #2E038C;
+  --primary: #226271;
+  --secondary: #63AD73;
+  --accent: #be5678;
+  --secondary-accent: #226271;
 
   font-family: 'Outfit', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 body, :root {
@@ -37,7 +38,8 @@ nav {
   display: block;
   position: fixed;
   width: 100%;
-  background: linear-gradient(180deg, #894478 0%, #65909a 100%);
+  /* background colors with opacity lowered */
+  background: #232b3ebf
 }
 
 ul {
@@ -77,7 +79,7 @@ body .intro-wrapper .pfp-container {
   margin: 75px auto;
   width: 65vw;
   height: 65vw;
-  background: linear-gradient(180deg, #894478 0%, #65909a 100%);
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
 }
 
 div #pfp {
@@ -91,7 +93,7 @@ div #pfp {
 .button-cont {
   display: flex;
   list-style: none;
-  background: linear-gradient(180deg, #894478 0%, #65909a 100%);
+  background: linear-gradient(180deg, var(--accent) 0%, var(--secondary-accent) 100%);
   border-radius: 10vw;
   align-self: center;
   justify-content: center;
@@ -137,7 +139,7 @@ h1 {
   margin: 10vh 0 2vh 0;
   padding: 60px 0 0 0;
   font-size: 48px;
-  background: linear-gradient(180deg, #6e5ca3 10%, #be5678 40%);
+  background: var(--accent);
   background-clip: text;
   color: transparent;
   text-align: center;
@@ -146,7 +148,7 @@ h1 {
 
 figure {
   margin: 0 auto;
-  background: #226271; 
+  background: var(--secondary-accent); 
   width: 85%;
   border-radius: 5px;
   height: 0.5em;
