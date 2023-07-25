@@ -1,0 +1,175 @@
+body .intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: space-between;
+  }
+  
+  body .intro-wrapper .pfp-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 50vw;
+    margin: auto;
+    width: 65vw;
+    height: 65vw;
+    background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
+  }
+  
+  div #pfp {
+    width: 59vw;
+    height: 59vw;
+    border-radius: 50vw;
+    object-fit: cover;
+    align-self: center;
+  }
+  
+  .button-cont {
+    display: flex;
+    list-style: none;
+    background: var(--primary);
+    border-radius: 10vw;
+    align-self: center;
+    justify-content: center;
+    width: 70vw;
+    height: 14vw;
+    transition: 0.25s;
+  }
+  
+  .button-cont:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+  .button-cont:hover {
+    color: #ffee10;
+    box-shadow: 0 0 10px var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    font-size: 28px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: 20vh 0 5vh 0;
+    padding: 60px 0 0 0;
+    font-size: 64px;
+    background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+  
+  .general-text {
+    line-height: 1.6;
+    padding:0.5vh 0 3vh 0;
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  
+  .flex-cont { 
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .my-tech-header {
+    margin: 10vh 0 2vh 0;
+    padding: 60px 0 0 0;
+    font-size: 48px;
+    background: var(--accent);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  figure {
+    margin: 0 auto;
+    background: var(--primary); 
+    width: 85%;
+    border-radius: 5px;
+    height: 0.5em;
+    margin-bottom: 2vh;
+  }
+  
+  .tech-svg-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .tech-svg-cont img {
+    width: 26%;
+    padding: 10px 0 10px 0;
+  }
+  
+  /* github repo cards */
+  
+  #top-projects-section {
+    display: flex;
+    font-weight: 200;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3vh;
+  }
+  
+  .github-repo-title, .github-repo-desc, .github-repo-info {
+    padding: 0 10px;
+  }
+  
+  .github-repo-title, .github-repo-info {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .github-repo-cont {
+    background: white;
+    border-radius: 12px;
+    width: 350px;
+  }
+  
+  .github-repo-desc {
+    margin: 0;
+  }
+  
+  .github-repo-info {
+    gap: 6px;
+  }
+  
+  .github-repo-title-text {
+    margin: 6px;
+    color: #596fda;
+  }
+  
+  .octicon-repo {
+    width: 20px;
+    padding: 0 4px;
+  }
+  
+  #contact-me-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  footer section h1 {
+    margin-top: 0;
+  }

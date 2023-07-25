@@ -6,5 +6,4 @@ My personal website, built with Django
 - browser compatability
 - animations
 - scalability (literally)
-- move body to seperate file
 - seo
