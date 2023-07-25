@@ -1,8 +1,8 @@
 body .intro-wrapper {
     display: flex;
     flex-direction: column;
-    height: 95vh;
-    justify-content: space-between;
+    height: 75vh;
+   justify-content:center;
   }
   
   body .intro-wrapper .pfp-container {
@@ -26,26 +26,21 @@ body .intro-wrapper {
   .button-cont {
     display: flex;
     list-style: none;
-    background: var(--primary);
+    background: #2e09832f;
     border-radius: 10vw;
     align-self: center;
     justify-content: center;
     width: 70vw;
     height: 14vw;
+    border-color: var(--accent);
+    border-style: solid;
     transition: 0.25s;
   }
   
-  .button-cont:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #ffee10;
-  }
-  
-  .button-cont:hover {
-    color: #ffee10;
-    box-shadow: 0 0 10px var(--accent);
-    text-shadow: 0 0 10px var(--accent);
-  }
-  
+.button-cont:hover {
+  background: var(--primary);
+}
+
   .button {
     display: flex;
     justify-content: center;
