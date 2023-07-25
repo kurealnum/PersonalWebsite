@@ -1,174 +1,227 @@
 body .intro-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 75vh;
-   justify-content:center;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+}
+
+.typing-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.typing-wrapper h1 {
+  background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding: 0;
+  color: #fff;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 3px solid white;
+  border-left: 3px transparent transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret 0.84s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
   }
-  
-  body .intro-wrapper .pfp-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 50vw;
-    margin: auto;
-    width: 65vw;
-    height: 65vw;
-    background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
+
+  to {
+    width: 100%
   }
-  
-  div #pfp {
-    width: 59vw;
-    height: 59vw;
-    border-radius: 50vw;
-    object-fit: cover;
-    align-self: center;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
   }
-  
-  .button-cont {
-    display: flex;
-    list-style: none;
-    background: #2e09832f;
-    border-radius: 10vw;
-    align-self: center;
-    justify-content: center;
-    width: 70vw;
-    height: 14vw;
-    border-color: var(--accent);
-    border-style: solid;
-    transition: 0.25s;
+
+  50% {
+    border-color: white
   }
-  
-.button-cont:hover {
+}
+
+body .intro-wrapper .pfp-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 50vw;
+  margin: auto;
+  width: 65vw;
+  height: 65vw;
+  background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
+}
+
+div #pfp {
+  width: 59vw;
+  height: 59vw;
+  border-radius: 50vw;
+  object-fit: cover;
+  align-self: center;
+}
+
+.button-cont {
+  display: flex;
+  list-style: none;
+  background: #2e09832f;
+  border-radius: 10vw;
+  align-self: center;
+  justify-content: center;
+  width: 70vw;
+  height: 14vw;
+  border-color: var(--accent);
+  border-style: solid;
+  transition: 0.25s;
+}
+
+.button-cont:hover{
   background: var(--primary);
 }
 
-  .button {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    color: white;
-    font-size: 28px;
-    width: 100%;
-  }
-  
-  h1 {
-    margin: 20vh 0 5vh 0;
-    padding: 60px 0 0 0;
-    font-size: 64px;
-    background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  
-  .general-text {
-    line-height: 1.6;
-    padding:0.5vh 0 3vh 0;
-    text-align: center;
-    font-size: 18px;
-    color:white;
-    max-width: 85%;
-    margin: 0 auto;
-  }
-  
-  .flex-cont { 
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .my-tech-header {
-    margin: 10vh 0 2vh 0;
-    padding: 60px 0 0 0;
-    font-size: 48px;
-    background: var(--accent);
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-    font-weight: 300;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  
-  figure {
-    margin: 0 auto;
-    background: var(--primary); 
-    width: 85%;
-    border-radius: 5px;
-    height: 0.5em;
-    margin-bottom: 2vh;
-  }
-  
-  .tech-svg-cont {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .tech-svg-cont img {
-    width: 26%;
-    padding: 10px 0 10px 0;
-  }
-  
-  /* github repo cards */
-  
-  #top-projects-section {
-    display: flex;
-    font-weight: 200;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 3vh;
-  }
-  
-  .github-repo-title, .github-repo-desc, .github-repo-info {
-    padding: 0 10px;
-  }
-  
-  .github-repo-title, .github-repo-info {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    font-size: 14px;
-  }
-  
-  .github-repo-cont {
-    background: white;
-    border-radius: 12px;
-    width: 350px;
-  }
-  
-  .github-repo-desc {
-    margin: 0;
-  }
-  
-  .github-repo-info {
-    gap: 6px;
-  }
-  
-  .github-repo-title-text {
-    margin: 6px;
-    color: #596fda;
-  }
-  
-  .octicon-repo {
-    width: 20px;
-    padding: 0 4px;
-  }
-  
-  #contact-me-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  footer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-  }
-  
-  footer section h1 {
-    margin-top: 0;
-  }
+.button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: white;
+  font-size: 28px;
+  width: 100%;
+}
+
+h1 {
+  margin: 20vh 0 5vh 0;
+  padding: 60px 0 0 0;
+  font-size: 64px;
+  background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.general-text {
+  line-height: 1.6;
+  padding: 0.5vh 0 3vh 0;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.flex-cont {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-tech-header {
+  margin: 10vh 0 2vh 0;
+  padding: 60px 0 0 0;
+  font-size: 48px;
+  background: var(--accent);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-weight: 300;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+figure {
+  margin: 0 auto;
+  background: var(--primary);
+  width: 85%;
+  border-radius: 5px;
+  height: 0.5em;
+  margin-bottom: 2vh;
+}
+
+.tech-svg-cont {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tech-svg-cont img {
+  width: 26%;
+  padding: 10px 0 10px 0;
+}
+
+/* github repo cards */
+
+#top-projects-section {
+  display: flex;
+  font-weight: 200;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3vh;
+}
+
+.github-repo-title,
+.github-repo-desc,
+.github-repo-info {
+  padding: 0 10px;
+}
+
+.github-repo-title,
+.github-repo-info {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 14px;
+}
+
+.github-repo-cont {
+  background: white;
+  border-radius: 12px;
+  width: 350px;
+}
+
+.github-repo-desc {
+  margin: 0;
+}
+
+.github-repo-info {
+  gap: 6px;
+}
+
+.github-repo-title-text {
+  margin: 6px;
+  color: #596fda;
+}
+
+.octicon-repo {
+  width: 20px;
+  padding: 0 4px;
+}
+
+#contact-me-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+footer section h1 {
+  margin-top: 0;
+}
