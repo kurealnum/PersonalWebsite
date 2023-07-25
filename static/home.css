@@ -98,6 +98,12 @@ div #pfp {
   color: white;
   font-size: 28px;
   width: 100%;
+  transition: 0.35s;
+}
+
+.button:hover{
+  text-shadow: 0 0 30px var(--accent);
+  color: var(--accent);
 }
 
 h1 {

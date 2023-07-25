@@ -10,7 +10,7 @@ gradients are to be decided!
 
 :root {
   --background-color: #02000D;
-  --primary: #2e0983;
+  --primary: #240d59;
   --secondary: #443C68;
   --accent: #cf71ff;
 
@@ -56,15 +56,21 @@ ul {
 a {
   text-decoration: none;
   padding: 6px 0;
+  font-size: 14.5px;
 }
 
 nav a li {
   display: inline-flex;
   color: white;
-  font-size: 13px;
+  transition: 0.2s;
+}
+
+nav a li:hover {
+  text-shadow: 0 0 30px var(--accent);
+  color: var(--accent);
 }
 
 #nav-name {
-  font-size: 24px;
+  font-size: 26px;
 }
 
