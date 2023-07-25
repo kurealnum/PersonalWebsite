@@ -226,8 +226,3 @@ footer {
   height: 78vh;
   justify-content: space-between;
 }
-
-#earth {
-  display: flex;
-  width: 100%;
-}
