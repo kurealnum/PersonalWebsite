@@ -20,12 +20,9 @@ body .intro-wrapper {
   padding: 0;
   color: #fff;
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
   border-right: 3px solid white;
   border-left: 3px transparent transparent;
-  /* The typwriter cursor */
   white-space: nowrap;
-  /* Keeps the content on a single line */
   animation:
     typing 3.5s steps(30, end),
     blink-caret 0.84s step-end infinite;
