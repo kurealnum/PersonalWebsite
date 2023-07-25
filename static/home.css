@@ -63,6 +63,8 @@ body .intro-wrapper {
     background-clip: text;
     color: transparent;
     text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   
   .general-text {
@@ -90,6 +92,8 @@ body .intro-wrapper {
     color: transparent;
     text-align: center;
     font-weight: 300;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
   
   figure {
