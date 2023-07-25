@@ -7,4 +7,4 @@ My personal website, built with Django
 - animations
 - scalability (literally)
 - move body to seperate file
-- links
+- seo
