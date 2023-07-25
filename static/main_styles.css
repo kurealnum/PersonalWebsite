@@ -102,6 +102,18 @@ div #pfp {
   justify-content: center;
   width: 70vw;
   height: 14vw;
+  transition: 0.3s;
+}
+
+.button-cont:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.button-cont:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
 }
 
 .button {
@@ -110,6 +122,7 @@ div #pfp {
   align-self: center;
   color: white;
   font-size: 28px;
+  width: 100%;
 }
 
 h1 {
