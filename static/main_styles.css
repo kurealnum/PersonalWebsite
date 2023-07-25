@@ -10,7 +10,7 @@ gradients are to be decided!
 
 :root {
   --background-color: #02000D;
-  --primary: #2e0983cf;
+  --primary: #2e0983;
   --secondary: #443C68;
   --accent: #cf71ff;
 
@@ -68,14 +68,6 @@ nav a li {
   font-size: 24px;
 }
 
-.intro-wrapper h1 {
-  margin: 8vh 0 0 0;
-  padding: 0;
-  background: linear-gradient(180deg, var(--primary), var(--accent) 100%);
-  background-clip: text;
-  color: transparent;
-}
-
 body .intro-wrapper {
   display: flex;
   flex-direction: column;
@@ -90,7 +82,7 @@ body .intro-wrapper .pfp-container {
   margin: auto;
   width: 65vw;
   height: 65vw;
-  background: linear-gradient(325deg, var(--primary) 35%, var(--accent) 100%);
+  background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
 }
 
 div #pfp {
@@ -104,7 +96,7 @@ div #pfp {
 .button-cont {
   display: flex;
   list-style: none;
-  background: linear-gradient(180deg, var(--primary), var(--secondary));
+  background: var(--primary);
   border-radius: 10vw;
   align-self: center;
   justify-content: center;
@@ -124,7 +116,7 @@ h1 {
   margin: 20vh 0 5vh 0;
   padding: 60px 0 0 0;
   font-size: 64px;
-  background: linear-gradient(180deg, var(--primary) 45%, var(--accent) 100%);
+  background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
   background-clip: text;
   color: transparent;
   text-align: center;
