@@ -228,3 +228,9 @@ footer {
 footer section h1 {
   margin-top: 0;
 }
+
+@media (min-width: 530px) {
+  .tech-svg-cont img {
+    width: 21%;
+  }
+}
