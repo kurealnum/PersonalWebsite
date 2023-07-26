@@ -19,9 +19,6 @@ Oscar - Home
     <div class="typing-wrapper">
         <h1>hi, i'm Oscar</h1>
     </div>
-    <!-- <div class="pfp-container">
-        <img id="pfp" src="{% static 'images/pfp.jpg' %}" alt="Profile picture">
-    </div> -->
     <div class="button-cont">
         <a class="button" href="#about-me">
             <li>about me</li>
@@ -41,7 +38,7 @@ Oscar - Home
     been learning Java just for the fun of it! However, it has been very beneficial towards my skills
     in object oriented programming.
 </p>
-<section class="flex-cont">
+<section class="flex-cont" aria-label="resume-button">
     <div class="button-cont">
         <a href="https://docs.google.com/document/d/104CdIhV0xpPLE5--gmSbonsOXHvxtyxsc5pmr79R42k/edit?usp=sharing"
             class="button">
@@ -53,7 +50,7 @@ Oscar - Home
 <h1 class="my-tech-header">my stack</h1>
 <figure></figure>
 
-<section class="tech-svg-cont">
+<section class="tech-svg-cont" aria-label="collection-of-tech-icons">
     <img src="{% static 'images/tech_icons/Django.svg' %}" alt="Django icon">
     <img src="{% static 'images/tech_icons/Flask-Dark.svg' %}" alt="Flask icon">
     <img src="{% static 'images/tech_icons/Python-Dark.svg' %}" alt="Python/Py icon">
@@ -68,7 +65,7 @@ Oscar - Home
 <h1 class="my-tech-header">familiar technologies</h1>
 <figure></figure>
 
-<section class="tech-svg-cont">
+<section class="tech-svg-cont" aria-label="2nd-collection-of-tech-icons">
     <img src="{% static 'images/tech_icons/C.svg' %}" alt="C icon">
     <img src="{% static 'images/tech_icons/Java-Dark.svg' %}" alt="Java icon">
     <img src="{% static 'images/tech_icons/LaTeX-Dark.svg' %}" alt="LaTex icon">
@@ -80,7 +77,7 @@ Oscar - Home
 
 <h1 class="main-header" id="top-projects">top projects</h1>
 
-<section id="top-projects-section">
+<section id="top-projects-section" aria-label="top-github-projects">
     {% for key, value in github_repos.items %}
     <div class="github-repo-cont">
         <header class="github-repo-title">
@@ -130,7 +127,7 @@ Oscar - Home
     {% endfor %}
 </section>
 
-<footer>
+<footer aria-label="contact-me">
     <section class="contact-me">
         <h1 class="main-header" id="contact-me">contact me</h1>
         <p class="general-text">Feel free to contact me for any reason whatsoever!</p>

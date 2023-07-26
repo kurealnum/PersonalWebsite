@@ -8,6 +8,5 @@ My personal website, built with Django
 - seo
 
 ### SEO TODO
-- structured data + rich results test
 - custom 404 page
 - more descriptive filenames
