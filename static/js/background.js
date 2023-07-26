@@ -2,10 +2,10 @@
 
 //getting colors
 const styles = getComputedStyle(document.documentElement);
-const backgroundColor = styles.getPropertyValue('--background-color')
+const backgroundColor = styles.getPropertyValue('--background-color');
 
-var starCount = styles.getPropertyValue('--star-count');
-var starSpeed = styles.getPropertyValue('--speed');
+var starCount = 250;
+var starSpeed = 0.3;
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");

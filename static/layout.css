@@ -14,10 +14,6 @@ gradients are to be decided!
   --secondary: #443C68;
   --accent: #cf71ff;
 
-  /* settings for background.js */
-  --star-count: 250;
-  --speed: 0.3;
-
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
 }
@@ -76,6 +72,10 @@ nav ul a li:hover {
 }
 
 @media (min-width: 500px) {
+  :root {
+  --star-count: 275;
+  --speed: 0.4;
+  }
   nav ul a {
     font-size: 17px;
   }
@@ -85,6 +85,9 @@ nav ul a li:hover {
 }
 
 @media (min-width: 600px) {
+  :root {
+  --speed: 0.5;
+  }
   nav ul a {
     font-size: 20px;
   }
@@ -94,12 +97,19 @@ nav ul a li:hover {
 }
 
 @media (min-width: 700px) {
+  :root {
+  --speed: 0.6;
+  }
   nav ul a {
     font-size: 21px;
   }
 }
 
 @media (min-width: 750px) {
+  :root {
+  --star-count: 300;
+  --speed: 0.6;
+  }
   nav ul {
   justify-content: flex-start;
   }
