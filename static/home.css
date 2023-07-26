@@ -28,7 +28,6 @@ body .intro-wrapper {
     blink-caret 0.84s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0
@@ -39,7 +38,6 @@ body .intro-wrapper {
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
   from,
@@ -52,24 +50,6 @@ body .intro-wrapper {
   }
 }
 
-body .intro-wrapper .pfp-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 50vw;
-  margin: auto;
-  width: 65vw;
-  height: 65vw;
-  background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
-}
-
-div #pfp {
-  width: 59vw;
-  height: 59vw;
-  border-radius: 50vw;
-  object-fit: cover;
-  align-self: center;
-}
-
 .button-cont {
   display: flex;
   list-style: none;
@@ -78,7 +58,7 @@ div #pfp {
   align-self: center;
   justify-content: center;
   width: 70vw;
-  height: 14vw;
+  height: 16vw;
   border-color: var(--accent);
   border-style: solid;
   transition: 0.25s;
@@ -89,6 +69,7 @@ div #pfp {
 }
 
 .button {
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -232,5 +213,45 @@ footer section h1 {
 @media (min-width: 530px) {
   .tech-svg-cont img {
     width: 21%;
+  }
+  
+  .button-cont {
+    width: 55vw;
+    height: 12.5vw;
+  }
+}
+
+@media (min-width: 630px) {
+  .button-cont {
+    width: 48vw;
+    height: 11vw;
+  }
+}
+
+@media (min-width: 750px) {
+  .button-cont {
+    width: 40vw;
+    height: 10vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .button-cont {
+    width: 33vw;
+    height: 9vw;
+  }
+}
+
+@media (min-width: 1050px) {
+  .button-cont {
+    width: 29vw;
+    height: 7.5vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-cont {
+    width: 300px;
+    height: 75px;
   }
 }
