@@ -12,12 +12,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'icos/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'icos/favicon-32x32.png}' %">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'icos/favicon-16x16.png' %}">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'layout.css' %}">
-    {% block extra_links %}
-    {% endblock %}
+    {% block extra_links %}{% endblock %}
 </head>
 
 <canvas id="canvas"></canvas>
