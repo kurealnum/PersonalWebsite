@@ -99,9 +99,15 @@ Oscar - Home
         </p>
         <div class="github-repo-info">
             <div class="color"></div>
+            {% if value.1 == None %}
+                <p class="language">
+                    Markdown <!-- lang isn't guaranteed to be md, but theres a good chance that it is -->
+                </p>
+            {% else %}
             <p class="language">
-                {{ value.1}}
+                {{ value.1 }}
             </p>
+            {% endif %}
             <!-- star icon -->
             <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
                 class="octicon octicon-star d-inline-block mr-2">
