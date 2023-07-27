@@ -88,7 +88,7 @@ body .intro-wrapper {
 
 h1 {
   font-size: 64px;
-  background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
+  background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
   background-clip: text;
   color: transparent;
   text-align: center;
