@@ -27,6 +27,10 @@ body, :root {
   scroll-behavior: smooth;
 }
 
+.body-center {
+  margin: 0 auto;
+}
+
 canvas {
   position: fixed;
   z-index: -1;
@@ -72,10 +76,6 @@ nav ul a li:hover {
 }
 
 @media (min-width: 500px) {
-  :root {
-  --star-count: 275;
-  --speed: 0.4;
-  }
   nav ul a {
     font-size: 17px;
   }
@@ -85,9 +85,6 @@ nav ul a li:hover {
 }
 
 @media (min-width: 600px) {
-  :root {
-  --speed: 0.5;
-  }
   nav ul a {
     font-size: 20px;
   }
@@ -97,18 +94,14 @@ nav ul a li:hover {
 }
 
 @media (min-width: 700px) {
-  :root {
-  --speed: 0.6;
-  }
   nav ul a {
     font-size: 21px;
   }
 }
 
 @media (min-width: 750px) {
-  :root {
-  --star-count: 300;
-  --speed: 0.6;
+  .body-center {
+    max-width: 800px;
   }
   nav ul {
   justify-content: flex-start;
@@ -118,6 +111,12 @@ nav ul a li:hover {
   }
   #nav-name {
     font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body-center {
+    max-width: 1200px;
   }
 }
   

@@ -48,9 +48,11 @@
 </nav>
 
 <body>
-    {% block body %}
-    {% endblock %}
-    <script src="{% static 'js/background.js' %}"></script>
+    <div class="body-center">
+        {% block body %}
+        {% endblock %}
+        <script src="{% static 'js/background.js' %}"></script>
+    </div>
 </body>
 
 </html>

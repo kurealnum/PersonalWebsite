@@ -219,6 +219,10 @@ footer section h1 {
     width: 55vw;
     height: 12.5vw;
   }
+  
+  h1 {
+    font-size: 70px;
+  }
 }
 
 @media (min-width: 630px) {
@@ -226,9 +230,13 @@ footer section h1 {
     width: 48vw;
     height: 11vw;
   }
+  h1 {
+    font-size: 76px;
+  }
 }
 
 @media (min-width: 750px) {
+  
   .button-cont {
     width: 40vw;
     height: 10vw;
@@ -236,6 +244,7 @@ footer section h1 {
 }
 
 @media (min-width: 900px) {
+  
   .button-cont {
     width: 33vw;
     height: 9vw;
@@ -253,5 +262,8 @@ footer section h1 {
   .button-cont {
     width: 300px;
     height: 75px;
+  }
+  h1 {
+    font-size: 84px;
   }
 }
