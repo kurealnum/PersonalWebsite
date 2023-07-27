@@ -233,6 +233,9 @@ footer section h1 {
   .general-text {
     font-size: 20px;
   }
+  .my-tech-header {
+    font-size: 54px;
+  }
 }
 
 @media (min-width: 630px) {
@@ -245,6 +248,9 @@ footer section h1 {
   }
   .general-text {
     font-size: 21px;
+  }
+  .my-tech-header {
+    font-size: 66px;
   }
 }
 
@@ -262,6 +268,9 @@ footer section h1 {
   .tech-svg-cont img {
     padding: 18px;
     width: 17%;
+  }
+  .my-tech-header {
+    font-size: 72px;
   }
 }
 
