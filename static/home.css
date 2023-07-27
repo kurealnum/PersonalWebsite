@@ -164,7 +164,7 @@ figure {
 }
 
 .github-link {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .github-repo-title,
@@ -198,7 +198,7 @@ figure {
 
 .github-repo-title-text {
   margin: 6px;
-  color: #596fda;
+  font-weight: 300;
 }
 
 .octicon-repo {
