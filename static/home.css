@@ -69,10 +69,11 @@ body .intro-wrapper {
 }
 
 .button {
+  height: 100%;
   text-decoration: none;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   color: white;
   font-size: 28px;
   width: 100%;
