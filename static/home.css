@@ -86,8 +86,6 @@ body .intro-wrapper {
 }
 
 h1 {
-  margin: 20vh 0 5vh 0;
-  padding: 60px 0 0 0;
   font-size: 64px;
   background: linear-gradient(180deg, var(--secondary) 55%, var(--accent) 100%);
   background-clip: text;
@@ -149,13 +147,23 @@ figure {
 }
 
 /* github repo cards */
+.section-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
 
 #top-projects-section {
   display: flex;
   font-weight: 200;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 3vh;
+}
+
+.github-link {
+  text-decoration: none
 }
 
 .github-repo-title,
@@ -176,6 +184,7 @@ figure {
   background: white;
   border-radius: 12px;
   width: 350px;
+  height: auto;
 }
 
 .github-repo-desc {
@@ -200,13 +209,6 @@ figure {
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
 }
 
 footer section h1 {
