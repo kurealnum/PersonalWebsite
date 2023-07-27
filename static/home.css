@@ -57,7 +57,7 @@ body .intro-wrapper {
   border-radius: 10vw;
   align-self: center;
   justify-content: center;
-  width: 70vw;
+  width: 64vw;
   height: 16vw;
   border-color: var(--accent);
   border-style: solid;
@@ -216,7 +216,7 @@ footer section h1 {
     width: 21%;
   }
   .button-cont {
-    width: 55vw;
+    width: 50vw;
     height: 12.5vw;
   }
   h1 {
@@ -229,7 +229,7 @@ footer section h1 {
 
 @media (min-width: 630px) {
   .button-cont {
-    width: 48vw;
+    width: 44vw;
     height: 11vw;
   }
   h1 {
@@ -242,8 +242,8 @@ footer section h1 {
 
 @media (min-width: 750px) {
   .button-cont {
-    width: 40vw;
-    height: 10vw;
+    width: 34vw;
+    height: 8.5vw;
   }
   .general-text {
     font-size: 22;
@@ -252,8 +252,8 @@ footer section h1 {
 
 @media (min-width: 900px) {
   .button-cont {
-    width: 33vw;
-    height: 9vw;
+    width: 29vw;
+    height: 7.75vw;
   }
   .general-text {
     font-size: 23x;
@@ -262,8 +262,8 @@ footer section h1 {
 
 @media (min-width: 1050px) {
   .button-cont {
-    width: 29vw;
-    height: 7.5vw;
+    width: 25vw;
+    height: 6.25vw;
   }
   .general-text {
     font-size: 24px;
