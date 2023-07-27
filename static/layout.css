@@ -41,6 +41,7 @@ nav {
   display: block;
   position: fixed;
   width: 100%;
+  height: 6vh;
   /* background colors with opacity lowered */
   background: #02000D8f;
 }

@@ -150,7 +150,7 @@ figure {
 /* github repo cards */
 .section-wrapper {
   display: flex;
-  height: 100vh;
+  height: 94vh;
   flex-direction: column;
   justify-content: center;
 }
