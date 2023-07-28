@@ -72,11 +72,11 @@ body .intro-wrapper {
   height: 16vw;
   border-color: var(--accent);
   border-style: solid;
-  transition: 0.25s;
+  transition: 0.3s;
 }
 
 .button-cont:hover{
-  background: var(--primary);
+  background: none;
 }
 
 .button {
@@ -114,6 +114,16 @@ h1 {
   color: white;
   max-width: 85%;
   margin: 0 auto;
+}
+
+.general-text-links {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
+}
+
+.general-text-links:hover {
+  text-shadow: 0 0 30px purple;
 }
 
 .flex-cont {
