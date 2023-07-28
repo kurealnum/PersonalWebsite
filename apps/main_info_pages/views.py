@@ -14,11 +14,14 @@ github_token = env('GITHUB_TOKEN')
 def index(request):
     template = loader.get_template('index.html')
 
+    #future dict of repos/repo info
     github_repos = {}
 
     #init repos here. names need to be exactly as they are on github
     headers = {'Authorization': 'token ' + github_token}
     all_repo_data = requests.get("https://api.github.com/users/kurealnum/repos", headers=headers).json()
+
+    #get all repo names
     repos = [all_repo_data[i]["name"] for i in range(len(all_repo_data))]   
 
     for i in range(len(repos)):
