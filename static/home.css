@@ -1,9 +1,10 @@
 .section-wrapper {
   display: flex;
   height: auto;
-  min-height: 74vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  min-height: 94vh;
+  padding: 10vh 0;
+/*   margin-top: 6vh;
+  margin-bottom: 10vh; */
   flex-direction: column;
   justify-content: center;
 }
@@ -222,6 +223,10 @@ figure {
   overflow: visible;
 }
 
+#contact-me {
+  margin: 2vh;
+}
+
 #contact-me-icons {
   display: flex;
   justify-content: center;
@@ -254,6 +259,9 @@ footer section h1 {
   }
   .my-tech-header {
     font-size: 54px;
+  }
+  #contact-me-icons a img {
+    width: 60px;
   }
 }
 
@@ -291,6 +299,9 @@ footer section h1 {
   .my-tech-header {
     font-size: 72px;
   }
+  #contact-me-icons a img {
+    width: 70px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -317,6 +328,9 @@ footer section h1 {
   .tech-svg-cont img {
     width: 125px;
   }
+  #contact-me-icons a img {
+    width: 78px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -326,5 +340,8 @@ footer section h1 {
   }
   h1 {
     font-size: 90px;
+  }
+  #contact-me-icons a img {
+    width: 84px;
   }
 }
