@@ -18,17 +18,20 @@ def index(request):
 
     #init repos here. names need to be exactly as they are on github
     headers = {'Authorization': 'token ' + github_token}
-    repo_list = ["Non-Profit-Link", "Data-Structures-and-Algorithms", "Personal-Workflows"]
+    all_repo_data = requests.get("https://api.github.com/users/kurealnum/repos", headers=headers).json()
+    repos = [all_repo_data[i]["name"] for i in range(len(all_repo_data))]   
 
-    for repo in repo_list:
+    for i in range(len(repos)):
+        if all_repo_data[i]["name"] == "kurealnum":
+            continue
+        
         #get all the data
-        repo_data = requests.get(f"https://api.github.com/repos/kurealnum/{repo}", headers=headers).json()
-        repo_link = repo_data["html_url"]
-        name = repo_data["full_name"]
-        desc = repo_data["description"]
-        lang = repo_data["language"]
-        star_count = repo_data["stargazers_count"]
-        fork_count = repo_data["forks_count"]
+        repo_link = all_repo_data[i]["html_url"]
+        name = all_repo_data[i]["full_name"]
+        desc = all_repo_data[i]["description"]
+        lang = all_repo_data[i]["language"]
+        star_count = all_repo_data[i]["stargazers_count"]
+        fork_count = all_repo_data[i]["forks_count"]
 
         github_repos[name] = [desc, lang, star_count, fork_count, repo_link]
         # (index) 0 is description, 1 is the language, 2 is the star count, 3 is the fork count, 4 is the link
