@@ -1,28 +1,55 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .section-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: auto;
   min-height: 94vh;
   padding: 10vh 0;
 /*   margin-top: 6vh;
   margin-bottom: 10vh; */
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .intro-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 75vh;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .typing-wrapper {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .typing-wrapper h1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, var(--secondary)), to(var(--accent)));
+  background: -o-linear-gradient(top, var(--secondary) 25%, var(--accent) 100%);
   background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
   background-clip: text;
   color: transparent;
@@ -35,9 +62,22 @@ body .intro-wrapper {
   border-right: 3px solid white;
   border-left: 3px transparent transparent;
   white-space: nowrap;
-  animation:
+  -webkit-animation:
     typing 2.8s steps(30, end),
     blink-caret 0.84s step-end infinite;
+          animation:
+    typing 2.8s steps(30, end),
+    blink-caret 0.84s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 @keyframes typing {
@@ -47,6 +87,18 @@ body .intro-wrapper {
 
   to {
     width: 100%
+  }
+}
+
+@-webkit-keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: white
   }
 }
 
@@ -63,16 +115,24 @@ body .intro-wrapper {
 }
 
 .button-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   background: #2e09832f;
   border-radius: 10vw;
-  align-self: center;
-  justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 64vw;
   height: 16vw;
   border-color: var(--accent);
   border-style: solid;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -83,12 +143,20 @@ body .intro-wrapper {
 .button {
   height: 100%;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   font-size: 28px;
   width: 100%;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
   transition: 0.35s;
 }
 
@@ -99,6 +167,8 @@ body .intro-wrapper {
 
 h1 {
   font-size: 64px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, var(--secondary)), to(var(--accent)));
+  background: -o-linear-gradient(top, var(--secondary) 25%, var(--accent) 100%);
   background: linear-gradient(180deg, var(--secondary) 25%, var(--accent) 100%);
   background-clip: text;
   color: transparent;
@@ -120,6 +190,8 @@ h1 {
 .general-text-links {
   color: var(--accent);
   text-decoration: none;
+  -webkit-transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
+  -o-transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
   transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
 }
 
@@ -129,8 +201,13 @@ h1 {
 
 .flex-cont {
   margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .my-tech-header {
@@ -156,10 +233,15 @@ figure {
 }
 
 .tech-svg-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 0 auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 85%;
 }
 
@@ -170,14 +252,19 @@ figure {
 
 /* github repo cards */
 #projects {
+  display: -ms-grid;
   display: grid;
   
 }
 
 #top-projects-section {
+  display: -ms-grid;
   display: grid;
   font-weight: 200;
+  -ms-grid-columns: 1fr 3vw 1fr 3vw 1fr;
   grid-template-columns: repeat(3, 1fr);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 3vw;
 }
@@ -195,13 +282,19 @@ figure {
 
 .github-repo-title,
 .github-repo-info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
 }
 
 .github-repo-cont {
+  display: -ms-grid;
   display: grid;
   color: #d7d9e4;
   background: #0d1117;
@@ -234,8 +327,12 @@ figure {
 }
 
 #contact-me-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
 
@@ -296,7 +393,9 @@ footer section h1 {
     font-size: 22;
   }
   .tech-svg-cont {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .tech-svg-cont img {
     padding: 18px;

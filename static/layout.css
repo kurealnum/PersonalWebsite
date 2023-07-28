@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* 
 CSS not updating? Press Ctrl + Shift + R
 
@@ -23,7 +30,8 @@ body, :root {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overscroll-behavior: none;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
   scroll-behavior: smooth;
 }
 
@@ -59,11 +67,16 @@ nav {
 }
 
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 nav ul a {
@@ -74,8 +87,12 @@ nav ul a {
 }
 
 nav ul a li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   color: white;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -117,7 +134,9 @@ nav ul a li:hover {
     max-width: 800px;
   }
   nav ul {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   }
   nav ul a {
     padding: 6px 25px;
