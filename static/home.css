@@ -169,11 +169,16 @@ figure {
 }
 
 /* github repo cards */
+#projects {
+  display: grid;
+  
+}
+
 #top-projects-section {
-  display: flex;
+  display: grid;
   font-weight: 200;
-  justify-content: center;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
   gap: 3vw;
 }
 
@@ -197,11 +202,12 @@ figure {
 }
 
 .github-repo-cont {
+  display: grid;
   color: #d7d9e4;
   background: #0d1117;
   border-radius: 12px;
   width: 350px;
-  margin-bottom: auto;
+
 }
 
 .github-repo-desc {
