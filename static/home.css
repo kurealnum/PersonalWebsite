@@ -1,3 +1,13 @@
+.section-wrapper {
+  display: flex;
+  height: auto;
+  min-height: 74vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
 body .intro-wrapper {
   display: flex;
   flex-direction: column;
@@ -148,19 +158,13 @@ figure {
 }
 
 /* github repo cards */
-.section-wrapper {
-  display: flex;
-  height: 94vh;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #top-projects-section {
   display: flex;
   font-weight: 200;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 3vw;
+  width: 1200px;
 }
 
 .github-link {
