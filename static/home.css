@@ -160,7 +160,7 @@ figure {
   font-weight: 200;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1vw;
+  gap: 3vw;
 }
 
 .github-link {
@@ -206,6 +206,7 @@ figure {
 .octicon-repo {
   width: 20px;
   padding: 0 4px;
+  overflow: visible;
 }
 
 #contact-me-icons {
