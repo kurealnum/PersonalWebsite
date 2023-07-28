@@ -160,10 +160,11 @@ figure {
   font-weight: 200;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 3vh;
+  gap: 1vw;
 }
 
 .github-link {
+  color: #015fbd;
   text-decoration: none;
 }
 
@@ -182,10 +183,11 @@ figure {
 }
 
 .github-repo-cont {
-  background: white;
+  color: #d7d9e4;
+  background: #0d1117;
   border-radius: 12px;
   width: 350px;
-  height: auto;
+  margin-bottom: auto;
 }
 
 .github-repo-desc {
