@@ -119,7 +119,7 @@ body .intro-wrapper {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  background: #2e09832f;
+  background: #03010e;
   border-radius: 10vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -129,7 +129,7 @@ body .intro-wrapper {
           justify-content: center;
   width: 64vw;
   height: 16vw;
-  border-color: var(--accent);
+  border-color: #cf71ff8f;
   border-style: solid;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -137,7 +137,7 @@ body .intro-wrapper {
 }
 
 .button-cont:hover{
-  background: none;
+  background: #2e09832f;
 }
 
 .button {
@@ -190,13 +190,6 @@ h1 {
 .general-text-links {
   color: var(--accent);
   text-decoration: none;
-  -webkit-transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
-  -o-transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
-  transition: color .3s ease-in-out, text-shadow .3s ease-in-out;
-}
-
-.general-text-links:hover {
-  text-shadow: 0 0 30px purple;
 }
 
 .flex-cont {
