@@ -1,163 +1,246 @@
-{% extends "layout.html" %}
-{% load static %}
-
-{% block title %}
-Oscar - Home
-{% endblock %}
-
-{% block meta-tags %}
-<meta name="description" content="Oscar's personal website shows an about me section, what technologies I use, and how to contact me">
-<meta name="keywords" content="Oscar, Oscar Gaske, Oscar CS, CS, Oscar Blog, Oscar Github, Gaske, HTML, CSS, JS, Django">
-{% endblock %}
-
-{% block extra-links %}
-<link rel="stylesheet" href="{% static 'home.css' %}">
-{% endblock %}
-
-{% block body %}
+{% extends "layout.html" %} {% load static %} {% block title %} Oscar - Home {%
+endblock %} {% block meta-tags %}
+<meta
+  name="description"
+  content="Oscar's personal website shows an about me section, what technologies I use, and how to contact me"
+/>
+<meta
+  name="keywords"
+  content="Oscar, Oscar Gaske, Oscar CS, CS, Oscar Blog, Oscar Github, Gaske, HTML, CSS, JS, Django"
+/>
+{% endblock %} {% block extra-links %}
+<link rel="stylesheet" href="{% static 'home.css' %}" />
+{% endblock %} {% block body %}
 <section class="section-wrapper">
-    <div class="intro-wrapper">
-            <div class="typing-wrapper">
-                <h1>hi, i'm Oscar</h1>
-            </div>
-        <div class="button-cont">
-            <a class="button" href="#about-me">
-                <li>about me</li>
-            </a>
-        </div>
+  <div class="intro-wrapper">
+    <div class="typing-wrapper">
+      <h1>hi, i'm Oscar</h1>
     </div>
+    <div class="button-cont">
+      <a class="button" href="#about-me">
+        <li>about me</li>
+      </a>
+    </div>
+  </div>
 </section>
 
 <section class="section-wrapper" id="about-me">
-    <h1>about me</h1>
-    <p class="general-text">
-        Hello there! I’m Oscar, an aspiring full-stack web developer specializing in backend dev, also known as kureal
-        or kurealnum in the online world!
-    </p>
-    <p class="general-text">
-        I primarily use Django as my backend framework, although I'm open to learning frameworks.
-        I'm about to start another project using Django again, but instead of a barebones frontend, I'll likely attempt to utilize React or a similar framework for scalability purposes. If you'd like to see my work in deployment, check
-        <a href="https://nonprofitlink.org/" class="general-text-links">this out</a>!
-        Also, feel free to take a look at <a href="#my-stack" class="general-text-links">my stack </a>for more information about my
-        skills and experiences!
-    </p>
-    <p class="general-text">And finally, feel free to
-        <a href="#contact-me" class="general-text-links">get in touch with me</a> — I'd love to discuss potential projects, collaborations, or
-        even employment opportunities!
-    </p>
-    <section class="flex-cont" aria-label="resume-button">
-        <div class="button-cont">
-            <a href="https://docs.google.com/document/d/104CdIhV0xpPLE5--gmSbonsOXHvxtyxsc5pmr79R42k/edit?usp=sharing"
-                class="button" target="_blank" rel="noopener noreferrer">
-                <li>my resume</li>
-            </a>
-        </div>
-    </section>
+  <h1>about me</h1>
+  <p class="general-text">
+    Hello there! I’m Oscar, an aspiring full-stack web developer specializing in
+    backend dev. I'm also known as kureal or kurealnum in the online world!
+  </p>
+  <p class="general-text">
+    I primarily use Django as my backend framework, although I'm open to
+    learning other frameworks. I'm about to start another project using Django
+    again, but instead of a barebones frontend, I'll likely attempt to utilize
+    React or a similar framework for scalability purposes.
+  </p>
+  <p class="general-text">
+    If you'd like to see my work in deployment, check
+    <a href="https://nonprofitlink.org/" class="general-text-links">this out</a
+    >! Also, feel free to take a look at
+    <a href="#my-stack" class="general-text-links">my stack </a>for more
+    information about my skills and experiences!
+  </p>
+  <p class="general-text">
+    And finally, feel free to
+    <a href="#contact-me" class="general-text-links">get in touch with me</a> —
+    I'd love to discuss potential projects, collaborations, or even employment
+    opportunities!
+  </p>
+  <section class="flex-cont" aria-label="resume-button">
+    <div class="button-cont">
+      <a
+        href="https://docs.google.com/document/d/104CdIhV0xpPLE5--gmSbonsOXHvxtyxsc5pmr79R42k/edit?usp=sharing"
+        class="button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <li>my resume</li>
+      </a>
+    </div>
+  </section>
 </section>
 
 <section class="section-wrapper">
-    <h1 class="my-tech-header" id="my-stack">my stack</h1>
-    <figure></figure>
+  <h1 class="my-tech-header" id="my-stack">my stack</h1>
+  <figure></figure>
 
-    <section class="tech-svg-cont" aria-label="collection-of-tech-icons">
-        <img src="{% static 'images/tech_icons/Django.svg' %}" alt="Django icon">
-        <img src="{% static 'images/tech_icons/Flask-Dark.svg' %}" alt="Flask icon">
-        <img src="{% static 'images/tech_icons/Python-Dark.svg' %}" alt="Python/Py icon">
-        <img src="{% static 'images/tech_icons/Github-Dark.svg' %}" alt="Github icon">
-        <img src="{% static 'images/tech_icons/Git.svg' %}" alt="Git icon">
-        <img src="{% static 'images/tech_icons/postgresql-original.svg' %}">
-        <img src="{% static 'images/tech_icons/SQLite.svg' %}" alt="Sqlite icon">
-        <img src="{% static 'images/tech_icons/JavaScript.svg' %}" alt="JavaScript/JS icon">
-        <img src="{% static 'images/tech_icons/HTML.svg' %}" alt="HTML icon">
-        <img src="{% static 'images/tech_icons/CSS.svg' %}" alt="CSS icon">
-    </section>
+  <section class="tech-svg-cont" aria-label="collection-of-tech-icons">
+    <img src="{% static 'images/tech_icons/Django.svg' %}" alt="Django icon" />
+    <img
+      src="{% static 'images/tech_icons/Flask-Dark.svg' %}"
+      alt="Flask icon"
+    />
+    <img
+      src="{% static 'images/tech_icons/Python-Dark.svg' %}"
+      alt="Python/Py icon"
+    />
+    <img
+      src="{% static 'images/tech_icons/Github-Dark.svg' %}"
+      alt="Github icon"
+    />
+    <img src="{% static 'images/tech_icons/Git.svg' %}" alt="Git icon" />
+    <img src="{% static 'images/tech_icons/postgresql-original.svg' %}" />
 
-    <h1 class="my-tech-header">familiar technologies</h1>
-    <figure></figure>
+    <img
+      src="{% static 'images/tech_icons/JavaScript.svg' %}"
+      alt="JavaScript/JS icon"
+    />
+    <img src="{% static 'images/tech_icons/HTML.svg' %}" alt="HTML icon" />
+    <img src="{% static 'images/tech_icons/CSS.svg' %}" alt="CSS icon" />
+    <img
+      src="{% static 'images/tech_icons/Linux-Dark.svg' %}"
+      alt="Linux/Ubuntu icon"
+    />
+    <img
+      src="{% static 'images/tech_icons/nginx-original.svg' %}"
+      alt="Nginx icon"
+    />
+    <img
+      src="{% static 'images/tech_icons/neovim-original.svg' %}"
+      alt="Neovim icon"
+    />
+  </section>
 
-    <section class="tech-svg-cont" aria-label="2nd-collection-of-tech-icons">
-        <img src="{% static 'images/tech_icons/C.svg' %}" alt="C icon">
-        <img src="{% static 'images/tech_icons/Java-Dark.svg' %}" alt="Java icon">
-        <img src="{% static 'images/tech_icons/LaTeX-Dark.svg' %}" alt="LaTex icon">
-        <img src="{% static 'images/tech_icons/Linux-Dark.svg' %}" alt="Linux/Ubuntu icon">
-        <img src="{% static 'images/tech_icons/Unity-Dark.svg' %}" alt="Unity icon">
-        <img src="{% static 'images/tech_icons/Blender-Dark.svg' %}" alt="Blender icon">
-        <img src="{% static 'images/tech_icons/VSCode-Dark.svg' %}" alt="VSCode (VSC) icon">
-    </section>
+  <h1 class="my-tech-header">familiar technologies</h1>
+  <figure></figure>
+
+  <section class="tech-svg-cont" aria-label="2nd-collection-of-tech-icons">
+    <img src="{% static 'images/tech_icons/C.svg' %}" alt="C icon" />
+    <img src="{% static 'images/tech_icons/Java-Dark.svg' %}" alt="Java icon" />
+    <img
+      src="{% static 'images/tech_icons/LaTeX-Dark.svg' %}"
+      alt="LaTex icon"
+    />
+    <img src="{% static 'images/tech_icons/SQLite.svg' %}" alt="Sqlite icon" />
+    <img
+      src="{% static 'images/tech_icons/Unity-Dark.svg' %}"
+      alt="Unity icon"
+    />
+    <img
+      src="{% static 'images/tech_icons/Blender-Dark.svg' %}"
+      alt="Blender icon"
+    />
+    <img
+      src="{% static 'images/tech_icons/VSCode-Dark.svg' %}"
+      alt="VSCode (VSC) icon"
+    />
+  </section>
 </section>
 
 <section class="section-wrapper" id="projects">
-    <h1>projects</h1>
-    <section id="top-projects-section" aria-label="top-github-projects">
-        {% for key, value in github_repos.items %}
-        <div class="github-repo-cont">
-            <header class="github-repo-title">
-                <!-- repo icon -->
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
-                    class="octicon octicon-repo">
-                    <path fill="#d7d9e4"
-                        d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
-                    </path>
-                </svg>
-                <a href="{{ value.4 }}" class="github-link" target="_blank" rel="noopener noreferrer">
-                    <h2 class="github-repo-title-text">
-                        {{ key }}
-                    </h2>
-                </a>
-            </header>
-            <p class="github-repo-desc">
-                {{ value.0 }}
-            </p>
-            <div class="github-repo-info">
-                <div class="color"></div>
-                {% if value.1 == None %}
-                    <p class="language">
-                        Markdown <!-- lang isn't guaranteed to be md, but theres a good chance that it is -->
-                    </p>
-                {% else %}
-                <p class="language">
-                    {{ value.1 }}
-                </p>
-                {% endif %}
-                <!-- star icon -->
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
-                    class="octicon octicon-star d-inline-block mr-2">
-                    <path fill="#d7d9e4"
-                        d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
-                    </path>
-                </svg>
-                <p class="star-count">
-                    {{ value.2 }}
-                </p>
-                <!-- fork icon -->
-                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
-                    class="octicon octicon-repo-forked mr-2">
-                    <path fill="#d7d9e4"
-                        d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z">
-                    </path>
-                </svg>
-                <p class="fork-count">
-                    {{ value.3 }}
-                </p>
-            </div>
-        </div>
-        {% endfor %}
-    </section>
+  <h1>projects</h1>
+  <section id="top-projects-section" aria-label="top-github-projects">
+    {% for key, value in github_repos.items %}
+    <div class="github-repo-cont">
+      <header class="github-repo-title">
+        <!-- repo icon -->
+        <svg
+          aria-hidden="true"
+          height="16"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="16"
+          data-view-component="true"
+          class="octicon octicon-repo"
+        >
+          <path
+            fill="#d7d9e4"
+            d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"
+          ></path>
+        </svg>
+        <a
+          href="{{ value.4 }}"
+          class="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 class="github-repo-title-text">{{ key }}</h2>
+        </a>
+      </header>
+      <p class="github-repo-desc">{{ value.0 }}</p>
+      <div class="github-repo-info">
+        <div class="color"></div>
+        {% if value.1 == None %}
+        <p class="language">
+          Markdown
+          <!-- lang isn't guaranteed to be md, but theres a good chance that it is -->
+        </p>
+        {% else %}
+        <p class="language">{{ value.1 }}</p>
+        {% endif %}
+        <!-- star icon -->
+        <svg
+          aria-hidden="true"
+          height="16"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="16"
+          data-view-component="true"
+          class="octicon octicon-star d-inline-block mr-2"
+        >
+          <path
+            fill="#d7d9e4"
+            d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"
+          ></path>
+        </svg>
+        <p class="star-count">{{ value.2 }}</p>
+        <!-- fork icon -->
+        <svg
+          aria-hidden="true"
+          height="16"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="16"
+          data-view-component="true"
+          class="octicon octicon-repo-forked mr-2"
+        >
+          <path
+            fill="#d7d9e4"
+            d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"
+          ></path>
+        </svg>
+        <p class="fork-count">{{ value.3 }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
 </section>
 
 <footer class="section-wrapper" aria-label="contact-me">
-    <section class="contact-me">
-        <h1 class="main-header" id="contact-me">contact me</h1>
-        <p class="general-text">Feel free to reach out to me!
-        </p>
-        <div id="contact-me-icons">
-            <a href="https://linktr.ee/kureal" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/contact_me_icons/link.svg' %}"
-                    alt="Link SVG icon"></a>
-            <a href="mailto:oscar.gaske.cs@gmail.com" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/contact_me_icons/email.svg' %}"
-                    alt="Email SVG icon" target="_blank" rel="noopener noreferrer"></a>
-            <a href="https://github.com/kurealnum" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/contact_me_icons/github.svg' %}"
-                    alt="Github SVG icon"></a>
-        </div>
-    </section>
+  <section class="contact-me">
+    <h1 class="main-header" id="contact-me">contact me</h1>
+    <p class="general-text">Feel free to reach out to me!</p>
+    <div id="contact-me-icons">
+      <a
+        href="https://linktr.ee/kureal"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          src="{% static 'images/contact_me_icons/link.svg' %}"
+          alt="Link SVG icon"
+      /></a>
+      <a
+        href="mailto:oscar.gaske.cs@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          src="{% static 'images/contact_me_icons/email.svg' %}"
+          alt="Email SVG icon"
+          target="_blank"
+          rel="noopener noreferrer"
+      /></a>
+      <a
+        href="https://github.com/kurealnum"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img
+          src="{% static 'images/contact_me_icons/github.svg' %}"
+          alt="Github SVG icon"
+      /></a>
+    </div>
+  </section>
 </footer>
 {% endblock %}
