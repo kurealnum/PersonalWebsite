@@ -3,3 +3,4 @@
 main_env/
 __pycache__/
 *.env
+env/
